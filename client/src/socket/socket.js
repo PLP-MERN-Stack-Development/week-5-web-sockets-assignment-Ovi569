@@ -147,3 +147,52 @@ export const useSocket = () => {
 };
 
 export default socket; 
+
+
+/*
+This file only covers the Socket.io client setup and a custom React hook for socket events.
+Here's what is covered and what is missing for each task:
+
+Task 1: Project Setup
+- "Set up a Node.js server with Express": NOT covered here. You need a server file (e.g., server.js or index.js) with Express and Socket.io setup.
+- "Configure Socket.io on the server side": NOT covered here. Needs server-side code.
+- "Create a React front-end application": PARTIALLY covered (this is a client file, but the full app is not shown).
+- "Set up Socket.io client in the React app": COVERED in this file.
+- "Establish a basic connection between client and server": PARTIALLY covered (client-side only).
+
+Task 2: Core Chat Functionality
+- "Implement user authentication": NOT covered here. Needs authentication logic (could be simple username prompt or JWT).
+- "Create a global chat room": PARTIALLY covered (client emits/receives messages, but server logic not shown).
+- "Display messages with sender's name and timestamp": PARTIALLY covered (messages are stored, but UI not shown).
+- "Show typing indicators": PARTIALLY covered (client handles typing events).
+- "Implement online/offline status": PARTIALLY covered (user list is handled, but server logic not shown).
+
+Task 3: Advanced Chat Features
+- "Create private messaging": PARTIALLY covered (client emits/receives private messages, but server logic not shown).
+- "Implement multiple chat rooms": NOT covered here.
+- "Add 'user is typing' indicator": PARTIALLY covered.
+- "Enable file or image sharing": NOT covered here.
+- "Implement read receipts": NOT covered here.
+- "Add message reactions": NOT covered here.
+
+Task 4: Real-Time Notifications
+- "Send notifications when a user receives a new message": NOT covered here.
+- "Notify when a user joins or leaves a chat room": PARTIALLY covered (system messages on join/leave).
+- "Display unread message count": NOT covered here.
+- "Implement sound notifications": NOT covered here.
+- "Add browser notifications": NOT covered here.
+
+Task 5: Performance and UX Optimization
+- "Implement message pagination": NOT covered here.
+- "Add reconnection logic": PARTIALLY covered (client reconnection options set).
+- "Optimize Socket.io for performance": NOT covered here.
+- "Implement message delivery acknowledgment": NOT covered here.
+- "Add message search functionality": NOT covered here.
+- "Ensure the application works well on both desktop and mobile devices": NOT covered here.
+
+Files needed to complete all tasks:
+- Server file (e.g., server.js) with Express and Socket.io setup, handling all events.
+- React components for chat UI, authentication, notifications, etc.
+- Additional client and server logic for advanced features (file sharing, reactions, read receipts, etc.).
+
+Summary: This file only covers the client-side socket logic. You need to implement the server-side logic and additional React components to fully meet all tasks.
